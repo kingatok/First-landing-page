@@ -33,18 +33,18 @@ module.exports = function(grunt) {
 				},
 			}
 		},
-		
+
 		browserSync: {
             dev: {
                 bsFiles: {
                     src : [
-                        'app/css/*.css',
-                        'app/*.html'
+                        '*.css',
+                        '*.html'
                     ]
                 },
                 options: {
                     watchTask: true,
-                    server: './app'
+                    server: './'
                 }
             }
         }
